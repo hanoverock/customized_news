@@ -101,8 +101,8 @@ def mail_send(content):
         #SSL连接
     mail163=smtplib.SMTP_SSL('smtp.163.com','465')
         #登录邮箱
-    username='forpython2021_2@163.com'
-    password='YNQGWVVDTHLVJBXN'
+    username=input('请输入发送邮箱')
+    password=input('请输入邮箱密码')
     mail163.login(username,password)
         #写邮件
     message=MIMEText(content,'plain','utf-8')
